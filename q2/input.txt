@@ -1,0 +1,4 @@
+carrot		23	78	y
+tomotto   23	78	y
+pea	  23	78	y
+cabage	  23	78	n
