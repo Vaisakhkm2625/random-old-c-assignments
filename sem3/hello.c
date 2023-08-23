@@ -43,8 +43,6 @@ void deleteRoot(int array[], int num) {
       break;
   }
 
-
-
   swap(&array[i], &array[size - 1]);
   size -= 1;
   for (int i = size / 2 - 1; i >= 0; i--) {
@@ -87,15 +85,19 @@ void bubbleSort(int arr[][2], int size) {
   }
 }
 
-
-
 int main() {
 
-  int intervels[7][2] = {{0, 2}, {1, 4},  {4, 6}, {0, 4},
-                         {7, 8}, {9, 11}, {3, 10}};
+  // int intervels[7][2] = {{0, 2}, {1, 4},  {4, 6}, {0, 4},
+  //                        {7, 8}, {9, 11}, {3, 10}};
 
+  int intervels[20][2];
   int intervel_size = 7;
   bubbleSort(intervels, intervel_size);
+
+  printf("Enter number of intervels");
+
+  for (int i = 0; i < ; inc - expression) {
+  }
 
   int laptop_queue[10];
   int laptop_needed = 0;
