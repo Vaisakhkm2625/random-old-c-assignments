@@ -50,7 +50,7 @@ void deleteRoot(int array[], int num) {
   }
 }
 void printArray(int array[], int size) {
-  for (int i = 0; i < size; ++i)
+  for (int i = 0; i < size; i++)
     printf("%d ", array[i]);
   printf("\n");
 }
@@ -62,7 +62,7 @@ void print2dArray(int array[][2], int size) {
 }
 // Main function to do heap sort
 void heapSort(int arr[], int n) {
-  // Build max heap
+  // Build min heap
   for (int i = n / 2 - 1; i >= 0; i--)
     heapify(arr, n, i);
   // Heap sort
@@ -87,17 +87,21 @@ void bubbleSort(int arr[][2], int size) {
 
 int main() {
 
+  int intervels[20][2];
+  int intervel_size = 7;
+
+  printf("How many intervels:");
+  scanf("%d", &intervel_size);
+  printf("Enter intervels: (give start,end)\n");
+
   // int intervels[7][2] = {{0, 2}, {1, 4},  {4, 6}, {0, 4},
   //                        {7, 8}, {9, 11}, {3, 10}};
 
-  int intervels[20][2];
-  int intervel_size = 7;
-  bubbleSort(intervels, intervel_size);
-
-  printf("Enter number of intervels");
-
-  for (int i = 0; i < ; inc - expression) {
+  for (int i = 0; i < intervel_size; i++) {
+    scanf("%d,%d", &intervels[i][0], &intervels[i][1]);
   }
+
+  bubbleSort(intervels, intervel_size);
 
   int laptop_queue[10];
   int laptop_needed = 0;
@@ -110,6 +114,7 @@ int main() {
     insert(laptop_queue, intervels[i][1]);
     laptop_needed = laptop_needed < size ? size : laptop_needed;
   }
+
   printArray(laptop_queue, size);
 
   printf("laptop needed: %d", laptop_needed);
